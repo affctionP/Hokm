@@ -2,6 +2,7 @@ class Card :
     def __init__(self,value,sign):
         self.value=value
         self.sign=sign
+        self.weight=0
         
     def __str__(self):
         return( f"{self.value} __of__ {self.sign}")

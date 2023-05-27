@@ -1,7 +1,8 @@
 class Player :
     #hand=[]
-    def __init__(self,name):
+    def __init__(self,name,id):
         self.name=name
+        self.id=id
         self.hand=[]
         
     def show_hand(self):
@@ -11,6 +12,13 @@ class Player :
             print(i.__str__())
     def set_hakem(self):
         self.is_hakem=True
+    
+        
+        
+    def play(self,index):
+        self.hand.remove(index)
+        return index
         
     def __str__(self):
         return self.name
+    
